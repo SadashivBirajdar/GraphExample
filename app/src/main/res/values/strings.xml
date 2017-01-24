@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">GraphExample</string>
+    <string name="clickInfo">Tap the data points below for more details</string>
+</resources>

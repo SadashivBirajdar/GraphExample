@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawingView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray">
+
+    <LinearLayout
+        android:id="@+id/lvDetailsView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/details_view_height"
+        android:layout_margin="@dimen/details_view_margin"
+        android:background="@drawable/background_border"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/tvDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/small_margin"
+            android:text="Date"
+            android:textColor="@color/yellow" />
+
+        <View
+            android:layout_width="@dimen/divider_width"
+            android:layout_height="@dimen/divider_height"
+            android:layout_marginRight="@dimen/small_margin"
+            android:layout_gravity="center_vertical"
+            android:background="@color/viewDividerColor" />
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/small_margin"
+            android:text="Date"
+            android:textColor="@color/yellow" />
+
+        <View
+            android:layout_width="@dimen/divider_width"
+            android:layout_height="@dimen/divider_height"
+            android:layout_marginRight="@dimen/small_margin"
+            android:background="@color/viewDividerColor" />
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textColor="@color/yellow" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lvDetailsInfoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:background="@color/black"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/clickInfo"
+            android:textColor="#d7ccc8"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/chart_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layerType="software"
+        android:layout_below="@+id/lvDetailsView" />
+</RelativeLayout>
